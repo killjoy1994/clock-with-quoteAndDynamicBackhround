@@ -24,6 +24,7 @@ function App() {
   let bgStyles = {
     backgroundImage: `url(${backgroundTime[background]})`,
     backgroundSize: "cover",
+    backgroundPosition: "center",
   };
   return (
     <div className="App" style={bgStyles}>

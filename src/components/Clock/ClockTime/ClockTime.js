@@ -35,9 +35,6 @@ const ClockTime = (props) => {
 
   props.onChangeBg(timeOfDay);
 
-  // hours = hours < 10 ? (hours = "0" + hours) : hours;
-  // minutes = minutes < 10 ? (minutes = "0" + minutes) : minutes;
-
   let showClock = `${hours} : ${minutes}`;
 
   return (
