@@ -35,7 +35,10 @@ const ClockTime = (props) => {
 
   props.onChangeBg(timeOfDay);
 
-  let showClock = `${hours} : ${minutes}`;
+  // hours = ;
+  // minutes = ;
+
+  let showClock = `${hours < 10 ? "0" + hours : hours} : ${minutes < 10 ? "0" + minutes : minutes}`;
 
   return (
     <div className={styles.clock}>
