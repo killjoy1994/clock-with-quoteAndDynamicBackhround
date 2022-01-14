@@ -26,7 +26,7 @@ const ClockTime = (props) => {
       setTimeOfDay("morning");
     } else if (hours > 12 && hours < 18) {
       setTimeOfDay("afternoon");
-    } else if (hours >= 18 && hours < 24) {
+    } else if (hours >= 18 && hours < 22) {
       setTimeOfDay("evening");
     } else {
       setTimeOfDay("night");
@@ -34,9 +34,6 @@ const ClockTime = (props) => {
   }, [hours, timeOfDay]);
 
   props.onChangeBg(timeOfDay);
-
-  // hours = ;
-  // minutes = ;
 
   let showClock = `${hours < 10 ? "0" + hours : hours} : ${minutes < 10 ? "0" + minutes : minutes}`;
 
