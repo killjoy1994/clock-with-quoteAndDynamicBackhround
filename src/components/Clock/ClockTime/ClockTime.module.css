@@ -1,0 +1,41 @@
+.clock {
+  color: white;
+  font-size: 80px;
+}
+
+.greeting {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.clock sup {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+@media (min-width: 400px) and (max-width: 650px) {
+  .clock {
+    font-size: 70px;
+  }
+  .greeting {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .clock {
+    font-size: 40px;
+  }
+
+  .clock sup {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .greeting {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
